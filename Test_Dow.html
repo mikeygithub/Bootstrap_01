@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul{
+          width:520px; //设置ul宽
+         height:30px; //设置ul高
+         list-style:none;//去除ul前面的点
+    }
+        ul li{
+            width:64px;
+            height:30px;
+        float:left; //设置浮动
+        }
+        ul li ul{
+            width:65px;
+            height:95px;
+            background:#F00;
+            display:none;//将二级菜单初始隐藏
+        }
+        ul li:hover ul{
+            display:block;//使用hover，当鼠标移动到对应的一级菜单上是显示二级菜单
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>下拉菜单
+    <ul>
+    <li><a href="#">下拉菜单</a></li>
+    <li><a href="#">下拉菜单</a></li>
+    <li><a href="#">下拉菜单</a></li>
+    <li><a href="#">下拉菜单</a></li>
+    </ul>
+    </li>
+</ul>
+
+</body>
+</html>

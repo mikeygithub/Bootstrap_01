@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script type="text/javascript" src="./js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.js"></script>
+<!--栅格系统-->
+    <style type="text/css">
+        div[class*='col-']{
+            background-color:gold ;
+            border: 1px solid red;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+<div class="container" style="background: #2aabd2">
+
+    <div class="row"><!--a: col-lg-*         大于1200排成一行，小于1200分别占一行-->
+        <div class="col-lg-3">col-lg-3</div>
+        <div class="col-lg-3">col-lg-3</div>
+        <div class="col-lg-3">col-lg-3</div>
+        <div class="col-lg-3">col-lg-3</div>
+    </div>
+    <div class="row"><!--b: col-md-*         大于992排成一行，小于992分别占一行-->
+        <div class="col-md-3">col-lg-3</div>
+        <div class="col-md-3">col-lg-3</div>
+        <div class="col-md-3">col-lg-3</div>
+        <div class="col-md-3">col-lg-3</div>
+    </div>
+    <div class="row"><!--a: col-sm-*         大于768排成一行，小于768分别占一行-->
+        <div class="col-sm-3">col-lg-3</div>
+        <div class="col-sm-3">col-lg-3</div>
+        <div class="col-sm-3">col-lg-3</div>
+        <div class="col-sm-3">col-lg-3</div>
+    </div>
+    <div class="row"><!--a: col-xs-*        始终排成一行-->
+        <div class="col-xs-3">col-lg-3</div>
+        <div class="col-xs-3">col-lg-3</div>
+        <div class="col-xs-3">col-lg-3</div>
+        <div class="col-xs-3">col-lg-3</div>
+    </div>
+    <div class="row"><!--列偏移-->
+        <div class="col-lg-4 col-lg-offset-2" >col-lg-3</div>
+        <div class="col-lg-4">col-lg-3</div>
+    </div>
+</div>
+</body>
+</html>
